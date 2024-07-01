@@ -40,9 +40,9 @@ public class CommissionTesting {
 
         assertEquals("10% commission of <= $1.000", main.CalculateCommission(false, "bonus", 1000, false));
 
-        assertEquals("$75", main.CalculateCommission(true, "bonus", 1200, false));
-        assertEquals("$75", main.CalculateCommission(true, "bonus", 10000, false));
-        assertEquals("$75", main.CalculateCommission(true, "bonus", 10200, false));
+        assertEquals("$75", main.CalculateCommission(true, "bonus", 1200, false)); //return &25
+        assertEquals("$75", main.CalculateCommission(true, "bonus", 10000, false)); //return &25
+        assertEquals("$75", main.CalculateCommission(true, "bonus", 10200, false)); //return &25
 
         assertEquals("$0", main.CalculateCommission(true, "standard", 1200, false));
         assertEquals("$0", main.CalculateCommission(true, "standard", 1000, false));
